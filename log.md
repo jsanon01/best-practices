@@ -33,11 +33,13 @@ The most common "Multi-Tier Architecture" is a "3-Tier Architecture."
 ![Multi-Tier](https://github.com/jsanon01/best-practices/blob/main/images/multi_tier.png)
 
 ### Frontend or Presetation Tier
+
+![Presentation Tier](https://github.com/jsanon01/best-practices/blob/main/images/presentation_tier.png)
 - Frontend interacts with backend through Logic Tier
 - Frontend uses API Gateway endpoints to call Lambda functions, which in turn interacts with data stores available in Data Tier.
 
 ### Logic or Application Tier
-
+![Application Tier](https://github.com/jsanon01/best-practices/blob/main/images/application.png)
 Logic Tier is also known as "Application Tier"
 - AWS Lambda
 - AWS API Gateway
@@ -46,7 +48,9 @@ Logic Tier is also known as "Application Tier"
 
 
 
-###  Databse or Data Tier
+###  Database or Data Tier
+
+![Data Tier](https://github.com/jsanon01/best-practices/blob/main/images/data_tier.png)
 
 ## Serverless Security Best Practices
 
