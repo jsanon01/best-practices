@@ -40,11 +40,12 @@ The most common "Multi-Tier Architecture" is a "3-Tier Architecture."
 
 ### Logic or Application Tier
 ![Application Tier](https://github.com/jsanon01/best-practices/blob/main/images/application.png)
-Logic Tier is also known as "Application Tier"
+
+Logic Tier includes:
 - AWS Lambda
 - AWS API Gateway
 
-#### ==> Logic Tier is the core of serverless serverless
+#### ==> also known as "Application Tier," Logic Tier is the core of serverless serverless
 
 
 
