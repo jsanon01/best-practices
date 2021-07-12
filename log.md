@@ -45,7 +45,7 @@ Logic Tier includes:
 - AWS Lambda
 - AWS API Gateway
 
-#### ==> also known as "Application Tier," Logic Tier is the core of serverless serverless
+#### => Also known as "Application Tier," Logic Tier is the core of Serverless Architecture.
 
 
 
@@ -102,6 +102,50 @@ It will connect to thew Logic or Application Tier using REST API running on API 
 ## Serverless Microservices Architecture Pattern
 Microservices Architecture is a suite of small services  that are independently deployable.
 
-### Microservices Advantages
-- Breaking down large complex system into independent, decoupled services easier to manage and extend.
+### Microservices vs Monoliths
+- Microservice application typically runs in a separate process,
+- Each microservice will talk to other microservices to perform work: 
+    - directly via REST API, 
+    - over a message bus, 
+    - or a number of other protocols, depending on implementation.
+##### whereas
+- A monolithic architecture-based application consists of fewer and larger parts, perhaps running as a single process
+- Due to the interdependence and complexity of Technology, one architecture doesn’t fit all situations.
 
+#### => Simply said, Microservices use "loosely and coupled services" to interact with each other whereas Monolyths run in a constricted environment as a "straight jacket."
+
+### Microservices Advantages
+
+The following characteristics describe the fundamental building blocks of a microservices architecture which are necessary to meet the design goals and obtain its benefits. Each microservice should be: 
+
+#### - Easier to manage and extend
+    - Breaking down large complex system into independent, decoupled services
+
+#### - Independently deployable 
+    - e.g., the front-end service can be deployed independently of the authentication service
+#### - Highly observable 
+    - through logging, monitoring, tracing, etc, one can determine what the service is doing
+#### - Loosely coupled 
+    - the service can perform its work without being overly dependent on how any other service is defined or implemented
+#### - Decentralized 
+    - spread across many different “systems,” potentially across many different geographies
+#### - Highly testable 
+    - developed from the beginning to be testable through automated test frameworks with high coverage rates
+#### - Highly maintainable 
+    - well-structured, well-commented, easy to understand, easy to change, easy and fast to build, etc (small size helps with all of this)
+#### - Fungible
+    - Easily replaced or reimplemented as requirements dictate
+#### - Focused and specialized 
+    - similar to the Unix philosophy of “do one thing well”
+#### - Contractual 
+    - having regimented, well-defined interfaces with deliberate life cycles
+
+### 7 Microservices Benefits
+
+1. Asymmetric Service Scaling (well-suited for massive scalability)
+2. Zero Downtime (independently deployable)
+3. Intelligent Deployment (Unwanted behavior can be detected before the old version is completely replaced)
+4. Innovation Through Polyglot Programming (If one experiment doesn’t work, no problem--microservices are “fungible” so just rewrite the microservice)
+5. Refactoring, Rewriting, and Decomposing (a legacy, monolithic application can be decomposed into microservices over time)
+6. Separation of Logic and Responsibilities (A “loosely coupled,” “independently deployable,” “specialized,” and “contractual” microservice allows teams to focus their efforts on the business logic in their area of expertise or access)
+7. Error Handling and Resiliency Design Patterns (The circuit breaker pattern is often used to prevent systemic failure due to a root cause in an isolated component)
