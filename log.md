@@ -91,7 +91,18 @@ This type of permission only requires caller to have access to invoke Lambda fun
  - Federated Identity Access using Cognito
 
 ## Serverless Static Website hosted on S3 bucket
-This static websote could be a fully-fledged JS-based application liek Angular or React App.
+You can use Amazon S3 to host a static website, which includes individual webpages alond with static content. Such webpages might also contain client-side scripts.
+
+![Static Website](https://github.com/jsanon01/best-practices/blob/main/images/static_website.png)
+#### When you configure a bucket as a static website, you must enable:
+- Static website hosting, 
+- Configure an index document, 
+- Set permissions
+- Use the Amazon S3 console, 
+    - REST API, 
+    - the AWS SDKs, 
+    - the AWS CLI, 
+    - or AWS CloudFormation.
 
 ## Serverless Mobile Backend
 Unlike serverless static websites, serverless applications will now act as mobile frontend. Therefore, Monile App will be the Presentation Tier.
