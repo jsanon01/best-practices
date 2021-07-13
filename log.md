@@ -24,6 +24,65 @@ Best Practices are ideas and tips that go along way in ensuring that you build a
 
 ## AWS DynamoDB Best Practices
 
+##### Table Design
+
+- First and the most important is the Table Design
+
+- DynamoDB tables provide the best performance when designed for Uniform Data Access.
+
+ - DynamoDB divides the provisioned throughput equally between all the table partitions in order to achieve maximum utilization of capacity units.
+
+-  Read and Write loads must be uniform across partitions, or partition keys.
+    - we don't quite get the optimal performance for the price we pay, if we don't pick the table partition keys thoughtfully.
+
+- Non-uniform data access pattern results in "hot partitions" meaning idle provisioned capacity that is not only heavily accessed but also waste  while paying for them.
+
+##### Caching services
+
+- You can use caching services like DAX to cache the hot data (not cheap)
+    - However, we should still focus on having the tables designed for uniform access because DAX is expensive.
+##### Provison Throughtput
+when changing the provisioned throughput for any DynamoDB table, i.e. scaling up or down:
+
+- Avoid temporary substantial scaling up of the provisioned capacity
+
+
+
+- It's a good idea to keep the attribute names shorter (This helps reduce the item size and the costs as well).
+- We should consider compressing the non-key attributes if we must store large values in our items.
+    - GZIP
+    - Store large items in S3, and then only the pointers to those items can be stored in DynamoDB.
+- Avoid Scan operations (as far as possible)
+    - Important to note that that filters always get applied after the query and scan operations are complete.
+     - The applicable RCUs will be calculated before applying the filters.
+
+- Always opt for eventual consistency (Unless your application demands strongly consistent reads)
+    - That will save you lots of money
+#####  Local Secondary Indexes   
+- Use Local Secondary Indexes (LSIs) sparingly.
+    - LSIs share the same partition, same physical partition, same space that is used by the table.
+    - Adding more indexes will reduce the available size for the table
+        - Use them as per your application's needs.
+    - Project fewer attributes on to secondary indexes
+        - Project up to maximum of 20 attributes per index
+        - choose them carefully
+    - Specify ALL if you want your queries to return the entire table item
+    - Use sort to sort the table by a different sort key
+
+#####  Global Secondary Indexes
+- Choose the keys for global secondary indexes resulting in uniform worlkoads
+    - Reading an entire table item to retrieve just a few attributes may result in consumption of a lot of read capacity.
+    - create a global secondary index by projecting just the needed attributes
+        - This creates a much smaller index and can result in considerable amount of savings.
+    - Use GSIs to creatr an eventually consistent read replica
+    - we can control the throughput of this index separately
+        - useful if you have two applications that read from this table
+        - You can control the table throughput individually for each application.
+            - In this case, one app could use the table and the other could use the global secondary index to perform reads.
+
+
+
+
 ## AWS Step Functions Best Practices
 
 ## AWS Serverless Architecture
