@@ -1,5 +1,5 @@
 
-# AWS & Serverless Best Practices
+# AWS Best Practices
 
 Best Practices are ideas and tips that go along way in ensuring that you build a well-optimized serverless applications.
 
@@ -26,7 +26,7 @@ Best Practices are ideas and tips that go along way in ensuring that you build a
 
 ![DynamoDB](https://github.com/jsanon01/best-practices/blob/main/images/dynamodb.png)
 
-##### Table Design
+### Table Design
 
 - First and the most important is the Table Design
 
@@ -60,7 +60,8 @@ when changing the provisioned throughput for any DynamoDB table, i.e. scaling up
 
 - Always opt for eventual consistency (Unless your application demands strongly consistent reads)
     - That will save you lots of money
-#####  Local Secondary Indexes   
+
+###  Local Secondary Indexes (LSIs)   
 - Use Local Secondary Indexes (LSIs) sparingly.
     - LSIs share the same partition, same physical partition, same space that is used by the table.
     - Adding more indexes will reduce the available size for the table
@@ -71,7 +72,7 @@ when changing the provisioned throughput for any DynamoDB table, i.e. scaling up
     - Specify ALL if you want your queries to return the entire table item
     - Use sort to sort the table by a different sort key
 
-#####  Global Secondary Indexes
+###  Global Secondary Indexes (GSIs)
 - Choose the keys for global secondary indexes resulting in uniform worlkoads
     - Reading an entire table item to retrieve just a few attributes may result in consumption of a lot of read capacity.
     - create a global secondary index by projecting just the needed attributes
@@ -120,10 +121,10 @@ We can not talk about "serverless" without mentioning "Lambda" functions and "AP
 
 Speaking of Permisson Model, we have 2 types:
 
-#### Invoke Permissions
+### Invoke Permissions
 This type of permission only requires caller to have access to invoke Lambda functions and no more access is needed.
 
-#### Execution Permissions
+### Execution Permissions
  They are used by AWS Lambda to execute the function codes.
 
  - Give each Lambda function its own execution role
@@ -137,7 +138,7 @@ This type of permission only requires caller to have access to invoke Lambda fun
  - Make use of KMS to encrypy sensitive data (either at rest or in transit)
  - Never log decrypted values to console or any persistent storage
  
- #### - For Lambda functions running inside a VPC
+ ### - For Lambda functions running inside a VPC
  - Use least privileges Security Groups
  - Lambda-specific subnets & Network configuration
 
@@ -222,3 +223,5 @@ The following characteristics describe the fundamental building blocks of a micr
 5. Refactoring, Rewriting, and Decomposing (a legacy, monolithic application can be decomposed into microservices over time)
 6. Separation of Logic and Responsibilities (A “loosely coupled,” “independently deployable,” “specialized,” and “contractual” microservice allows teams to focus their efforts on the business logic in their area of expertise or access)
 7. Error Handling and Resiliency Design Patterns (The circuit breaker pattern is often used to prevent systemic failure due to a root cause in an isolated component)
+
+# Serverless Best Practices
