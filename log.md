@@ -16,6 +16,9 @@ Best Practices are ideas and tips that go along way in ensuring that you build a
 - Use VPC only if necessary
 
 ## API Gateway Best Practices
+
+![API Lifecycle](https://github.com/jsanon01/best-practices/blob/main/images/api_lifecycle.png)
+
 - Use Custom Domain in the Production environment (recommended)
 - Use DevOps tools for CI/CD automation
 - Deploy APIs closer to customers
