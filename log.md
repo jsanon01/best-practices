@@ -78,6 +78,8 @@ when changing the provisioned throughput for any DynamoDB table, i.e. scaling up
     - Specify ALL if you want your queries to return the entire table item
     - Use sort to sort the table by a different sort key
 
+![LSI vs GSI](https://github.com/jsanon01/best-practices/blob/main/images/lsi_gsi.png)
+
 ###  Global Secondary Indexes (GSIs)
 - Choose the keys for global secondary indexes resulting in uniform worlkoads
     - Reading an entire table item to retrieve just a few attributes may result in consumption of a lot of read capacity.
