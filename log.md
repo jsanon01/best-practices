@@ -197,6 +197,9 @@ It will connect to thew Logic or Application Tier using REST API running on API 
 
 
 ## Serverless Microservices Architecture Pattern
+
+![Microservices Architecture Pattern](https://github.com/jsanon01/best-practices/blob/main/images/micro_services.png)
+
 Microservices Architecture is a suite of small services  that are independently deployable.
 
 ### Microservices vs Monoliths
