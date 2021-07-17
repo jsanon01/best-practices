@@ -100,7 +100,11 @@ when changing the provisioned throughput for any DynamoDB table, i.e. scaling up
 
 Step Functions is a serverless orchestration service that lets you combine AWS Lambda functions and other AWS services to build business-critical applications. Through Step Functions' graphical console, you see your application’s workflow as a series of event-driven steps.
 
-Step Functions is based on state machines and tasks. A state machine is a workflow. A task is a state in a workflow that represents a single unit of work that another AWS service performs. Each step in a workflow is a state.
+Step Functions is based on state machines and tasks. A state machine is a workflow. A task is a state in a workflow that represents a single unit of work that another AWS service performs.
+
+![Step Function](https://github.com/jsanon01/best-practices/blob/main/images/step_function.png)
+
+Each step in a workflow is a state.
 
 - Use timeouts to avoid stuck executions
 - Use Amazon S3 ARNs instead of passing large payloads
