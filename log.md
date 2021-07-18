@@ -4,6 +4,9 @@
 Best Practices are ideas and tips that go along way in ensuring that you build a well-optimized serverless applications.
 
 ## AWS Lambda Best Practices
+
+![AWS LAmbda Best Practices](https://github.com/jsanon01/best-practices/blob/main/images/lambda_best_practices.png)
+
 - Grant only the necessary IAM Permissions to Lambda functions
 - Always use the Programming Best Prcatices
 - Make use of error handling mechanisms
@@ -18,6 +21,7 @@ Best Practices are ideas and tips that go along way in ensuring that you build a
 ## API Gateway Best Practices
 
 Used across businesses and organizations, from enterprises to startups, API Gateway makes it easy to define, secure, deploy, share, and operate APIs at any scale. 
+
 ### THE API LIFECYCLE
 
 ![API Lifecycle](https://github.com/jsanon01/best-practices/blob/main/images/api_lifecycle.png)
@@ -49,12 +53,11 @@ Used across businesses and organizations, from enterprises to startups, API Gate
 ![DAX](https://github.com/jsanon01/best-practices/blob/main/images/dax.png)
 - You can use caching services like DAX to cache the hot data (not cheap)
     - However, we should still focus on having the tables designed for uniform access because DAX is expensive.
+
 ##### Provison Throughtput
 when changing the provisioned throughput for any DynamoDB table, i.e. scaling up or down:
 
 - Avoid temporary substantial scaling up of the provisioned capacity
-
-
 
 - It's a good idea to keep the attribute names shorter (This helps reduce the item size and the costs as well).
 - We should consider compressing the non-key attributes if we must store large values in our items.
@@ -146,6 +149,8 @@ Logic Tier includes:
 
 We can not talk about "serverless" without mentioning "Lambda" functions and "API Gateway" services. We know that AWS Lambda uses a "decoupled permission model."
 
+![AWS Lambda Serverless Architecture](https://github.com/jsanon01/best-practices/blob/main/images/lambda_serverless.png)
+
 Speaking of Permisson Model, we have 2 types:
 
 ### Invoke Permissions
@@ -183,6 +188,7 @@ This type of permission only requires caller to have access to invoke Lambda fun
 You can use Amazon S3 to host a static website, which includes individual webpages along with static content. Such webpages might also contain client-side scripts.
 
 ![Static Website](https://github.com/jsanon01/best-practices/blob/main/images/static_website.png)
+
 #### When you configure a bucket as a static website, you must enable:
 - Static website hosting, 
 - Configure an index document, 
