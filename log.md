@@ -264,8 +264,8 @@ The following characteristics describe the fundamental building blocks of a micr
 
 # AWS Serverless CLI Commands
 
-- ![Create VPC](https://jsanon01.github.io/serverless/index.html#vpc_command)
-- ![Create Subnets](https://jsanon01.github.io/serverless/index.html#subnet_command)
+- [Create VPC](https://jsanon01.github.io/serverless/index.html#vpc_command)
+- [Create Subnets](https://jsanon01.github.io/serverless/index.html#subnet_command)
 - Create Internet Gateway
 - Create NAT Gateway
 - Create Route Tables
