@@ -261,3 +261,11 @@ The following characteristics describe the fundamental building blocks of a micr
 7. Error Handling and Resiliency Design Patterns (The circuit breaker pattern is often used to prevent systemic failure due to a root cause in an isolated component)
 
 # Serverless Best Practices
+
+# AWS Serverless CLI Commands
+
+- ![Create VPC](https://jsanon01.github.io/serverless/index.html#vpc_command)
+- ![Create Subnets](https://jsanon01.github.io/serverless/index.html#subnet_command)
+- Create Internet Gateway
+- Create NAT Gateway
+- Create Route Tables
