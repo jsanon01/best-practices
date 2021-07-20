@@ -266,6 +266,20 @@ The following characteristics describe the fundamental building blocks of a micr
 
 - [Create VPC](https://jsanon01.github.io/serverless/index.html#vpc_command)
 - [Create Subnets](https://jsanon01.github.io/serverless/index.html#subnet_command)
+ 
 - Create Internet Gateway
+<!--
 - Create NAT Gateway
-- Create Route Tables
+- Create Elastic IP
+- Create NAT Gateway
+    Create Route Tables
+    Adding Internet Routes
+    Route Table Associations
+    Create Security Groups
+    Adding Rules to Security Group
+    Create Key-Pairs
+    Create EC2 instance
+    SSH to newly EC2
+    Apache Installation
+    Risk Management Overview
+-->
