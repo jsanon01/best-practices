@@ -174,7 +174,7 @@ This type of permission only requires caller to have access to invoke Lambda fun
  - Use least privileges Security Groups
  - Lambda-specific subnets & Network configuration
 
- #### - Controlling API Gateway Access
+ ### - Controlling API Gateway Access
  - API keys and usage plans
  - API Gateway Policies
  - AWS Lambda authorizers
