@@ -200,8 +200,9 @@ You can use Amazon S3 to host a static website, which includes individual webpag
     - or AWS CloudFormation.
 
 [Reference: AWS Enabling website hosting](https://docs.aws.amazon.com/AmazonS3/latest/userguide/EnableWebsiteHosting.html)
+
 ## Serverless Mobile Backend
-Unlike serverless static websites, serverless applications will now act as mobile frontend. Therefore, Monile App will be the Presentation Tier.
+Unlike serverless static websites, serverless applications will now act as mobile frontend. Therefore, Mobile App will be the Presentation Tier.
 
 It will connect to the Logic or Application Tier using REST API running on API Gateway which triggers the Lambda functions.
 
