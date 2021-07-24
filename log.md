@@ -271,8 +271,10 @@ The following characteristics describe the fundamental building blocks of a micr
 - [Create Internet Gateway](https://jsanon01.github.io/serverless/index.html#igw_command)
 
 - [Create NAT Gateway](https://jsanon01.github.io/serverless/index.html#nat_gateway_command)
+
+- [Create Elastic IP](https://jsanon01.github.io/serverless/index.html#eip_command)
+
 <!--
-- Create Elastic IP
 - Create NAT Gateway
     Create Route Tables
     Adding Internet Routes
