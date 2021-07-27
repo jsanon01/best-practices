@@ -24,15 +24,15 @@ Best Practices are ideas and tips that go along way in ensuring that you build a
 
 Used across businesses and organizations, from enterprises to startups, API Gateway makes it easy to define, secure, deploy, share, and operate APIs at any scale. 
 
-### THE API LIFECYCLE
-
-![API Lifecycle](https://github.com/jsanon01/best-practices/blob/main/images/api_lifecycle.png)
-
 - Use Custom Domain in the Production environment (recommended)
 - Use DevOps tools for CI/CD automation
 - Deploy APIs closer to customers
 - Enable logging options (to track down failures and their causes)
 - Enable AWS Clouwatch logs for the API. 
+
+### THE API LIFECYCLE
+
+![API Lifecycle](https://github.com/jsanon01/best-practices/blob/main/images/api_lifecycle.png)
 
 ## AWS DynamoDB Best Practices
 
