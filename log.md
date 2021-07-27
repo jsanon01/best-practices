@@ -18,6 +18,8 @@ Best Practices are ideas and tips that go along way in ensuring that you build a
 - Keep declarations & instantiations outside the Lambda handler.
 - Use VPC only if necessary
 
+![Services invoking Lambda Functions](https://github.com/jsanon01/best-practices/blob/main/images/services_invoking_lambda.png)
+
 ## API Gateway Best Practices
 
 Used across businesses and organizations, from enterprises to startups, API Gateway makes it easy to define, secure, deploy, share, and operate APIs at any scale. 
@@ -262,6 +264,7 @@ The following characteristics describe the fundamental building blocks of a micr
 7. Error Handling and Resiliency Design Patterns (The circuit breaker pattern is often used to prevent systemic failure due to a root cause in an isolated component)
 
 # Serverless Best Practices
+
 
 # AWS Serverless CLI Commands
 
