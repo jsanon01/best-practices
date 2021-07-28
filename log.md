@@ -30,6 +30,9 @@ Used across businesses and organizations, from enterprises to startups, API Gate
 - Enable logging options (to track down failures and their causes)
 - Enable AWS Clouwatch logs for the API. 
 
+### RESTFul API Design
+![API Design](https://github.com/jsanon01/best-practices/blob/main/images/api_flow.png)
+
 ### THE API LIFECYCLE
 
 ![API Lifecycle](https://github.com/jsanon01/best-practices/blob/main/images/api_lifecycle.png)
