@@ -31,6 +31,7 @@ Used across businesses and organizations, from enterprises to startups, API Gate
 - Enable AWS Clouwatch logs for the API. 
 
 ### RESTFul API Design
+
 ![API Design](https://github.com/jsanon01/best-practices/blob/main/images/api_flow.png)
 
 ### THE API LIFECYCLE
