@@ -60,7 +60,7 @@ Used across businesses and organizations, from enterprises to startups, API Gate
 - You can use caching services like DAX to cache the hot data (not cheap)
     - However, we should still focus on having the tables designed for uniform access because DAX is expensive.
 
-##### Provison Throughtput
+##### Provision Throughtput
 when changing the provisioned throughput for any DynamoDB table, i.e. scaling up or down:
 
 - Avoid temporary substantial scaling up of the provisioned capacity
