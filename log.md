@@ -60,7 +60,7 @@ Used across businesses and organizations, from enterprises to startups, API Gate
 - You can use caching services like DAX to cache the hot data (not cheap)
     - However, we should still focus on having the tables designed for uniform access because DAX is expensive.
 
-##### Provision Throughtput
+### Provision Throughtput
 when changing the provisioned throughput for any DynamoDB table, i.e. scaling up or down:
 
 - Avoid temporary substantial scaling up of the provisioned capacity
@@ -75,6 +75,7 @@ when changing the provisioned throughput for any DynamoDB table, i.e. scaling up
 
 - Always opt for eventual consistency (Unless your application demands strongly consistent reads)
     - That will save you lots of money
+![DynamoDB Throughput](https://github.com/jsanon01/best-practices/blob/main/images/db_throughput_1.png)
 
 ###  Local Secondary Indexes (LSIs)   
 - Use Local Secondary Indexes (LSIs) sparingly.
