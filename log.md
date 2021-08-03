@@ -78,6 +78,7 @@ when changing the provisioned throughput for any DynamoDB table, i.e. scaling up
 ![DynamoDB Throughput](https://github.com/jsanon01/best-practices/blob/main/images/db_throughput_1.png)
 
 ![DynamoDB Throughput 2](https://github.com/jsanon01/best-practices/blob/main/images/db_throughput_2.png)
+
 ###  Local Secondary Indexes (LSIs)   
 - Use Local Secondary Indexes (LSIs) sparingly.
     - LSIs share the same partition, same physical partition, same space that is used by the table.
@@ -102,7 +103,7 @@ when changing the provisioned throughput for any DynamoDB table, i.e. scaling up
         - You can control the table throughput individually for each application.
             - In this case, one app could use the table and the other could use the global secondary index to perform reads.
 
-### The difference between GSIs vs LSIs
+## The difference between GSIs vs LSIs
 
 ![LSI vs GSI](https://github.com/jsanon01/best-practices/blob/main/images/difference.png)
 
