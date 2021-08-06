@@ -79,7 +79,7 @@ when changing the provisioned throughput for any DynamoDB table, i.e. scaling up
 
 ![DynamoDB Throughput 2](https://github.com/jsanon01/best-practices/blob/main/images/db_throughput_2.png)
 
-###  Local Secondary Indexes (LSIs)   
+##  Local Secondary Indexes (LSIs)   
 - Use Local Secondary Indexes (LSIs) sparingly.
     - LSIs share the same partition, same physical partition, same space that is used by the table.
     - Adding more indexes will reduce the available size for the table
