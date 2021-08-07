@@ -284,8 +284,9 @@ The following characteristics describe the fundamental building blocks of a micr
 
 - [Create Elastic IP](https://jsanon01.github.io/serverless/index.html#eip_command)
 
-<!--
+
 - Create NAT Gateway
+<!--
     Create Route Tables
     Adding Internet Routes
     Route Table Associations
