@@ -286,8 +286,9 @@ The following characteristics describe the fundamental building blocks of a micr
 
 
 - Create NAT Gateway
+
+- Create Route Tables
 <!--
-    Create Route Tables
     Adding Internet Routes
     Route Table Associations
     Create Security Groups
