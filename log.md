@@ -223,6 +223,7 @@ It will connect to the Logic or Application Tier using REST API running on API G
 Microservices Architecture is a suite of small services  that are independently deployable.
 
 ### Microservices vs Monoliths
+
 - Microservice application typically runs in a separate process,
 - Each microservice will talk to other microservices to perform work: 
     - directly via REST API, 
