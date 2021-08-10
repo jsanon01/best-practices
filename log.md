@@ -56,6 +56,7 @@ Used across businesses and organizations, from enterprises to startups, API Gate
 - Non-uniform data access pattern results in "hot partitions" meaning idle provisioned capacity that is not only heavily accessed but also waste  while paying for them.
 
 ### Caching services
+
 ![DAX](https://github.com/jsanon01/best-practices/blob/main/images/dax.png)
 - You can use caching services like DAX to cache the hot data (not cheap)
     - However, we should still focus on having the tables designed for uniform access because DAX is expensive.
