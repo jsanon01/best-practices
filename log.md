@@ -62,6 +62,7 @@ Used across businesses and organizations, from enterprises to startups, API Gate
     - However, we should still focus on having the tables designed for uniform access because DAX is expensive.
 
 ### Provision Throughtput
+
 when changing the provisioned throughput for any DynamoDB table, i.e. scaling up or down:
 
 - Avoid temporary substantial scaling up of the provisioned capacity
