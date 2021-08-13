@@ -143,6 +143,7 @@ The most common "Multi-Tier Architecture" is a "3-Tier Architecture."
 - Frontend uses API Gateway endpoints to call Lambda functions, which in turn interacts with data stores available in Data Tier.
 
 ### Logic or Application Tier
+
 ![Application Tier](https://github.com/jsanon01/best-practices/blob/main/images/application.png)
 
 Logic Tier includes:
