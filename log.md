@@ -296,8 +296,9 @@ The following characteristics describe the fundamental building blocks of a micr
 
 - Adding Internet Routes
 
-<!--    Route Table Associations
-    Create Security Groups
+-  Route Table Associations
+  
+  <!--     Create Security Groups
     Adding Rules to Security Group
     Create Key-Pairs
     Create EC2 instance
