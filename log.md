@@ -168,6 +168,7 @@ We can not talk about "serverless" without mentioning "Lambda" functions and "AP
 Speaking of Permisson Model, we have 2 types:
 
 ### Invoke Permissions
+
 This type of permission only requires caller to have access to invoke Lambda functions and no more access is needed.
 
 ### Execution Permissions
