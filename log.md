@@ -186,11 +186,12 @@ This type of permission only requires caller to have access to invoke Lambda fun
  - Never log decrypted values to console or any persistent storage
  
  ### - For Lambda functions running inside a VPC
+ 
  - Use least privileges Security Groups
  - Lambda-specific subnets & Network configuration
 
  ### - Controlling API Gateway Access
- 
+
  - API keys and usage plans
  - API Gateway Policies
  - AWS Lambda authorizers
