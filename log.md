@@ -172,6 +172,7 @@ Speaking of Permisson Model, we have 2 types:
 This type of permission only requires caller to have access to invoke Lambda functions and no more access is needed.
 
 ### Execution Permissions
+
  They are used by AWS Lambda to execute the function codes.
 
  - Give each Lambda function its own execution role
@@ -186,7 +187,7 @@ This type of permission only requires caller to have access to invoke Lambda fun
  - Never log decrypted values to console or any persistent storage
  
  ### - For Lambda functions running inside a VPC
- 
+
  - Use least privileges Security Groups
  - Lambda-specific subnets & Network configuration
 
