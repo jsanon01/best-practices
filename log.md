@@ -208,6 +208,7 @@ You can use Amazon S3 to host a static website, which includes individual webpag
 ![Static Website](https://github.com/jsanon01/best-practices/blob/main/images/static_website.png)
 
 #### When you configure a bucket as a static website, you must enable:
+
 - Static website hosting, 
 - Configure an index document, 
 - Set permissions
