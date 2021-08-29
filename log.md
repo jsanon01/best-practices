@@ -251,6 +251,7 @@ Microservices Architecture is a suite of small services  that are independently 
 The following characteristics describe the fundamental building blocks of a microservices architecture which are necessary to meet the design goals and obtain its benefits. Each microservice should be: 
 
 #### - Easier to manage and extend
+
     - Breaking down large complex system into independent, decoupled services
 
 #### - Independently deployable 
