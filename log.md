@@ -257,8 +257,9 @@ The following characteristics describe the fundamental building blocks of a micr
 #### - Independently deployable 
 
     - e.g., the front-end service can be deployed independently of the authentication service
-    
+
 #### - Highly observable 
+
     - through logging, monitoring, tracing, etc, one can determine what the service is doing
 #### - Loosely coupled 
     - the service can perform its work without being overly dependent on how any other service is defined or implemented
