@@ -262,8 +262,9 @@ The following characteristics describe the fundamental building blocks of a micr
 #### - Highly observable 
 
     - through logging, monitoring, tracing, etc, one can determine what the service is doing
-    
+
 #### - Loosely coupled 
+
     - the service can perform its work without being overly dependent on how any other service is defined or implemented
 #### - Decentralized 
     - spread across many different “systems,” potentially across many different geographies
