@@ -268,6 +268,7 @@ The following characteristics describe the fundamental building blocks of a micr
     - the service can perform its work without being overly dependent on how any other service is defined or implemented
 
 #### - Decentralized 
+
     - spread across many different “systems,” potentially across many different geographies
 #### - Highly testable 
     - developed from the beginning to be testable through automated test frameworks with high coverage rates
