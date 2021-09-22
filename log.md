@@ -270,8 +270,9 @@ The following characteristics describe the fundamental building blocks of a micr
 #### - Decentralized 
 
     - spread across many different “systems,” potentially across many different geographies
-    
+
 #### - Highly testable 
+
     - developed from the beginning to be testable through automated test frameworks with high coverage rates
 #### - Highly maintainable 
     - well-structured, well-commented, easy to understand, easy to change, easy and fast to build, etc (small size helps with all of this)
